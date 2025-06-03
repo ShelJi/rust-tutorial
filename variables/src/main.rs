@@ -50,5 +50,23 @@ fn main() {
     
     {
         println!("The value of n in the inner scope without declaring is: {}", n);
-    }
+    } 
+    
+    
+    println!("------------------");
+    println!("Variable Declarations for scalability");
+    println!("------------------");
+    let spaces = "         ";
+    let length_of_spaces = spaces.len();
+    println!("The length of spaces is: {length_of_spaces}");
+
+    let spaces = "         "; // type str
+    let spaces = spaces.len(); // // type int
+    println!("The length of spaces is: {spaces}");
+    // cause no problem works fine
+
+    // let mut spaces = "         "; // type str
+    // let spaces = spaces.len(); // // type int
+    // println!("The length of spaces is: {spaces}");
+    // // cause type error
 }
