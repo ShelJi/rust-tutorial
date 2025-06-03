@@ -65,8 +65,8 @@ fn main() {
     println!("The length of spaces is: {spaces}");
     // cause no problem works fine
 
-    // let mut spaces = "         "; // type str
-    // let spaces = spaces.len(); // // type int
-    // println!("The length of spaces is: {spaces}");
-    // // cause type error
+    let mut spaces = "         "; // type str
+    let spaces = spaces.len(); // // type int
+    println!("The length of spaces is: {spaces}");
+    // cause type error
 }

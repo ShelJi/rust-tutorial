@@ -26,6 +26,8 @@ change directory `cd hello_world`
 
 run `cargo run`
 
+run in quite mode `cargo run -q`
+
 to check code `cargo check`
 
 install library (crate in rust)
