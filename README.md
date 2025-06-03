@@ -37,7 +37,7 @@ install library (crate in rust)
 
 - `i32` -> integer of 32 bits
 - `f64` -> floating point number of 64 bits
-- `&'string str` -> string
+- `&'static str` -> string
 - `usize` -> number of bytes in the string
 
 ## Learn order
