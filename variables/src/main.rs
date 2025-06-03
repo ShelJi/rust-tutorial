@@ -8,7 +8,7 @@ fn main() {
     println!("IMMuttable in Rust");
     println!("------------------");
 
-    let x = 5;
+    let x: i32 = 5;
     println!("The value of x is: {}", x);
     // x = 6; // ❌ This would cause a compile-time error
     println!("The value of x is: {}", x);
@@ -19,7 +19,7 @@ fn main() {
     println!("------------------");
 
     // Shadowing x with a new mutable variable
-    let mut x = 5;
+    let mut x: i32 = 5;
     println!("The value of x is: {}", x);
     x = 6;
     x += 1;
@@ -40,33 +40,37 @@ fn main() {
     println!("------------------");
     println!("Variable shadowing in Rust");
     println!("------------------");
-    let n = 1;
+
+    let n: i32 = 1;
     {
-        let n = 2;
+        let n: i32 = 2;
         println!("The value of n in the inner scope is: {}", n);
     }
-    
+
     println!("The value of n in the outer scope is: {}", n);
-    
+
     {
-        println!("The value of n in the inner scope without declaring is: {}", n);
-    } 
-    
-    
+        println!(
+            "The value of n in the inner scope without declaring is: {}",
+            n
+        );
+    }
+
     println!("------------------");
     println!("Variable Declarations for scalability");
     println!("------------------");
-    let spaces = "         ";
-    let length_of_spaces = spaces.len();
+
+    let spaces: &'static str = "         ";
+    let length_of_spaces: usize = spaces.len();
     println!("The length of spaces is: {length_of_spaces}");
 
-    let spaces = "         "; // type str
-    let spaces = spaces.len(); // // type int
+    let spaces: &'static str = "         "; // type str
+    let spaces: usize = spaces.len(); // // type int
     println!("The length of spaces is: {spaces}");
     // cause no problem works fine
 
-    let mut spaces = "         "; // type str
-    let spaces = spaces.len(); // // type int
-    println!("The length of spaces is: {spaces}");
-    // cause type error
+    // let mut spaces = "         "; // type str
+    // let spaces = spaces.len(); // // type int
+    // println!("The length of spaces is: {spaces}");
+    // // cause type error
 }

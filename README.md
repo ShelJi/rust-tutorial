@@ -32,3 +32,15 @@ to check code `cargo check`
 
 install library (crate in rust)
 `cargo add rand` where rand is a `import random` library in python
+
+## Data Types or Type Annotations
+
+- `i32` -> integer of 32 bits
+- `f64` -> floating point number of 64 bits
+- `&'string str` -> string
+- `usize` -> number of bytes in the string
+
+## Learn order
+
+- hello_world
+- variables
