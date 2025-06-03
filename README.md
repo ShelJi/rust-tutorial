@@ -27,3 +27,6 @@ change directory `cd hello_world`
 run `cargo run`
 
 to check code `cargo check`
+
+install library (crate in rust)
+`cargo add rand` where rand is a `import random` library in python
